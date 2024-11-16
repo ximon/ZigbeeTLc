@@ -289,6 +289,7 @@ void app_task(void)
 
 void sensorDeviceSysException(void)
 {
+#if	USE_DISPLAY
 #if DEBUG_ENABLE
 	extern volatile u16 T_evtExcept[4];
 	show_big_number_x10(T_evtExcept[0], 0);
@@ -298,6 +299,7 @@ void sensorDeviceSysException(void)
 	show_small_number(T_evtExcept[1], false);
 #endif
 	update_lcd();
+#endif
 #ifdef USE_EPD
 	while(task_lcd())
 		sleep_us(USE_EPD*1000);

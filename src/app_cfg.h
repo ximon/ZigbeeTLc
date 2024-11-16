@@ -38,9 +38,9 @@ extern "C" {
  * Product Information
  */
 /* Debug mode config */
-#define	DEBUG_ENABLE					0 // lcd = DeviceSysException
+#define	DEBUG_ENABLE					1 // lcd = DeviceSysException
 
-#define	UART_PRINTF_MODE				0
+#define	UART_PRINTF_MODE				1
 #define USB_PRINTF_MODE         		0
 
 /* PM */
@@ -106,7 +106,7 @@ extern "C" {
 #define MODULE_WATCHDOG_ENABLE						0
 
 /* UART module */
-#define	MODULE_UART_ENABLE							0
+#define	MODULE_UART_ENABLE							1
 
 #if (ZBHCI_USB_PRINT || ZBHCI_USB_CDC || ZBHCI_USB_HID || ZBHCI_UART)
 	#define ZBHCI_EN								1

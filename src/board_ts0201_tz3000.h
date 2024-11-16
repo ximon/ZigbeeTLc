@@ -1,6 +1,7 @@
 /*
- * board_ts0201_tz3000.h
+ * board_mho_c122.h
  *
+ *  Created on: 12 нояб. 2023 г.
  *      Author: pvvx
  */
 #ifndef _BOARD_TS0201_TZ3000_H_
@@ -9,8 +10,6 @@
 #include "version_cfg.h"
 
 #if (BOARD == BOARD_TS0201_TZ3000)
-
-#define ZIGBEE_TUYA_OTA 	1
 
 #define RF_TX_POWER_DEF		RF_POWER_INDEX_P3p01dBm
 
@@ -67,7 +66,7 @@
 
 // DEBUG
 #if UART_PRINTF_MODE
-	#define	DEBUG_INFO_TX_PIN	    GPIO_SWS //print
+	#define	DEBUG_INFO_TX_PIN	    GPIO_PB1 //print
 #endif
 
 #endif // BOARD == BOARD_TS0201_TZ3000

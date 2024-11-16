@@ -59,6 +59,8 @@ int main(void){
 
 	user_init(isRetention);
 
+	printf("main()");
+
 	irq_enable(); // drv_enable_irq();
 
 #if (MODULE_WATCHDOG_ENABLE)
