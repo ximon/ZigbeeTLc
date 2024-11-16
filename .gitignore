@@ -2,5 +2,5 @@ build
 .idea
 zigpy_ota
 SDK
-tools/widows
+tools/windows
 tools/linux
